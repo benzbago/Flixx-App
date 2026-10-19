@@ -8,7 +8,7 @@ const global = {
     totalResults: 0,
   },
   api: {
-    apiKey: '***REMOVED***',
+    apiKey: 'YOUR_TMDB_API_KEY',
     apiUrl: 'https://api.themoviedb.org/3/',
   },
 };
