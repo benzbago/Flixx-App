@@ -3,7 +3,19 @@
 .env.*
 !.env.example
 
+# Superpowers execution scratch files
+.superpowers/
+
+# Local dependencies and test artifacts
+node_modules/
+test-results/
+playwright-report/
+debug.log
+
 
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# Local Netlify folder
+.netlify

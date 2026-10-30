@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Flixx">
+  <rect width="64" height="64" rx="12" fill="#020d18"/>
+  <path d="M18 14h31v9H28v8h18v9H28v18H18z" fill="#f1c40f"/>
+</svg>
