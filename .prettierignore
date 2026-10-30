@@ -1,0 +1,8 @@
+node_modules
+lib
+webfonts
+test-results
+playwright-report
+.netlify
+js/script.js
+package-lock.json
