@@ -145,7 +145,14 @@ test("trailer modal traps forward and reverse keyboard focus", async ({
   await page.goto("/");
   await page.getByRole("button", { name: /watch trailer/i }).click();
   const close = page.locator("#close-trailer");
-  const retry = page.locator("#trailer-player button", { hasText: "Retry" });
+  const player = page.locator("#trailer-player");
+  const retry = player.getByRole("button", { name: "Retry" });
+
+  await expect(player).toHaveAttribute("aria-busy", "false");
+  await expect(retry).toBeVisible();
+  await expect(retry).toBeEnabled();
+  await expect(page.locator("main")).toHaveAttribute("inert", "");
+  await expect(page.locator("main")).toHaveAttribute("aria-hidden", "true");
   await expect(close).toBeFocused();
   await page.keyboard.press("Shift+Tab");
   await expect(retry).toBeFocused();
