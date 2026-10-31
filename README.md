@@ -138,3 +138,13 @@ This portfolio-hardening work started from the local repository's clean `main` a
 ## License and reuse
 
 This repository is a learning and portfolio project. Retain the course attribution and applicable third-party notices, and review the course/tutorial terms before redistributing course-derived source.
+
+## Live Demo
+
+[View Flixx — Movies & TV Shows](https://flixx-benz.netlify.app)
+
+Browse movies and TV shows, watch trailers, and manage a personal
+watchlist with watched statuses and filters.
+
+Watchlist data is saved in your current browser and does not sync
+between devices.
